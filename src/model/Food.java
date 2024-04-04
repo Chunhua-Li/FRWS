@@ -4,94 +4,96 @@
  */
 package model;
 
+import java.util.Date;
+
 /**
  *
  * @author lchca
  */
 public class Food{
  
-	private Integer id;
-	private String name;
-	private Integer price;
-	private Integer num;
-	private String expiration;
-	private String category;
-	private String remark;
-	private String createBy;
+	private int foodID;
+	private String foodName;
+        private String foodDescription;
+	private float foodPrice;
+	private int foodQuantity;
+	private Date foodExpirationDate;
+	private String category;	
+        private boolean isSurplusFood;
 
-	private String status;
+    public Food(int foodID, String foodName, String foodDescription, float foodPrice, int foodQuantity, Date foodExpirationDate, String category, boolean isSurplusFood) {
+        this.foodID = foodID;
+        this.foodName = foodName;
+        this.foodDescription = foodDescription;
+        this.foodPrice = foodPrice;
+        this.foodQuantity = foodQuantity;
+        this.foodExpirationDate = foodExpirationDate;
+        this.category = category;
+        this.isSurplusFood = isSurplusFood;
+    }
 
-	public String getStatus() {
-		return status;
-	}
+   
+    public Integer getFoodID() {
+        return foodID;
+    }
 
-	public void setStatus(String status) {
-		this.status = status;
-	}
+    public void setFoodID(Integer foodID) {
+        this.foodID = foodID;
+    }
 
-	public Integer getId() {
-		return id;
-	}
+    public String getFoodName() {
+        return foodName;
+    }
 
-	public void setId(Integer id) {
-		this.id = id;
-	}
+    public void setFoodName(String foodName) {
+        this.foodName = foodName;
+    }
 
-	public String getName() {
-		return name;
-	}
+    public String getFoodDescription() {
+        return foodDescription;
+    }
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    public void setFoodDescription(String foodDescription) {
+        this.foodDescription = foodDescription;
+    }
 
-	public Integer getPrice() {
-		return price;
-	}
+    public Float getFoodPrice() {
+        return foodPrice;
+    }
 
-	public void setPrice(Integer price) {
-		this.price = price;
-	}
+    public void setFoodPrice(Float foodPrice) {
+        this.foodPrice = foodPrice;
+    }
 
-	public Integer getNum() {
-		return num;
-	}
+    public Integer getFoodQuantity() {
+        return foodQuantity;
+    }
 
-	public void setNum(Integer num) {
-		this.num = num;
-	}
+    public void setFoodQuantity(Integer foodQuantity) {
+        this.foodQuantity = foodQuantity;
+    }
 
-	public String getExpiration() {
-		return expiration;
-	}
+    public Date getFoodExpirationDate() {
+        return foodExpirationDate;
+    }
 
-	public void setExpiration(String expiration) {
-		this.expiration = expiration;
-	}
+    public void setFoodExpirationDate(Date foodExpirationDate) {
+        this.foodExpirationDate = foodExpirationDate;
+    }
 
-	public String getCategory() {
-		return category;
-	}
+    public String getCategory() {
+        return category;
+    }
 
-	public void setCategory(String category) {
-		this.category = category;
-	}
+    public void setCategory(String category) {
+        this.category = category;
+    }   
 
-	public String getRemark() {
-		return remark;
-	}
+    public boolean isIsSurplusFood() {
+        return isSurplusFood;
+    }
 
-	public void setRemark(String remark) {
-		this.remark = remark;
-	}
-
-	public String getCreateBy() {
-		return createBy;
-	}
-
-	public void setCreateBy(String createBy) {
-		this.createBy = createBy;
-	}
+    public void setIsSurplusFood(boolean isSurplusFood) {
+        this.isSurplusFood = isSurplusFood;
+    }
 }
-
-
